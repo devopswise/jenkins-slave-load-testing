@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label 'jenkins-dind-ssh-slave' 
+    label 'jenkins-k8s-slave' 
   }
 
   stages {
