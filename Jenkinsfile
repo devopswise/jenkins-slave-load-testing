@@ -1,11 +1,11 @@
 pipeline {
   agent {
-    label 'jenkins-k8s-slave' 
+    label 'jenkins-dind-ssh-slave' 
   }
 
   stages {
     stage('Install chromedriver') {
-        steps {
+      steps {   
           sh 'python loadtest.py'
         }
     }
