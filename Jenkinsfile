@@ -9,4 +9,5 @@ pipeline {
           sh 'python loadtest.py'
         }
     }
+  }
 }
